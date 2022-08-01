@@ -81,6 +81,6 @@ class AutoRoler(commands.Cog):
         await self.config.guild(ctx.guild).enabled.set(False)
         await ctx.send(_("AutoRoler disabled"))
         
-    @autrole.command()
+    @autorole.command()
     async def cleardata(self, ctx):
         await self.config.clear_all()
